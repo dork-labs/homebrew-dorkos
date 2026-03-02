@@ -1,0 +1,29 @@
+name: Test Formula
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+
+      - name: Lint formula
+        run: brew style Formula/dorkos.rb
+
+      - name: Audit formula
+        run: brew audit --strict Formula/dorkos.rb
+
+      - name: Install formula
+        run: |
+          brew install --build-from-source Formula/dorkos.rb
+
+      - name: Test formula
+        run: brew test Formula/dorkos.rb
