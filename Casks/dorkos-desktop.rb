@@ -1,6 +1,6 @@
 cask "dorkos-desktop" do
-  version "0.110.0"
-  sha256 "3b1f0049f8bf61accf2bd63eede4c544202ecca94bb5327d46274aee5e8f071c"
+  version "0.119.0"
+  sha256 "753707d8dd8c16a664d546623e5c316c5ba1fe94feaaace68b5b8f6846f45c5b"
 
   url "https://github.com/dork-labs/dorkos/releases/download/v#{version}/DorkOS-#{version}-arm64.dmg",
       verified: "github.com/dork-labs/dorkos/"
