@@ -1,8 +1,8 @@
 class Dorkos < Formula
   desc "OS-layer for AI agents — scheduling, memory, and coordination"
   homepage "https://dorkos.dev"
-  url "https://registry.npmjs.org/dorkos/-/dorkos-0.128.0.tgz"
-  sha256 "b8a196e354ace8d03b53b9ade9827282181d02d60cfeb5fe5de8f6a6c54c0c2e"
+  url "https://registry.npmjs.org/dorkos/-/dorkos-0.129.0.tgz"
+  sha256 "72a0062ec07c3606e598c7c0609ce16583c0aa69ba76f80139487623038870d3"
   license "MIT"
 
   depends_on "node@22"
